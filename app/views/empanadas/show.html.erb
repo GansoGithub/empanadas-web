@@ -1,0 +1,19 @@
+<h1>Registro: </h1>
+<p>
+  <strong>Empanadas de Carne:</strong>
+  <%= @empanadashow.carne %>
+</p>
+
+
+<p>
+  <strong>Empanadas de Pollo:</strong>
+  <%= @empanadashow.pollo %>
+</p>
+
+<p>
+  <strong>Ventas Totales:</strong>
+  <b>$ <%= @empanadashow.total %></b>
+</p>
+
+<p><%= link_to 'Nuevo Registro', new_empanada_path %></p>
+<p><%= link_to 'Historial', historial_path %></p>

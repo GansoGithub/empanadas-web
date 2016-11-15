@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  carne: 1
+  pollo: 1
+  total: 1
+  #moncarne: 1
+  #monpollo: 1
+  #montotal: 1
+
+two:
+  carne: 1
+  pollo: 1
+  total: 1
+  #moncarne: 1
+  #monpollo: 1
+  #montotal: 1

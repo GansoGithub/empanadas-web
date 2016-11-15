@@ -1,0 +1,21 @@
+<h1>Historial de Ventas</h1>
+ 
+<table>
+  <tr>
+    <th>Empanadas de Carne (Unidades)</th>
+    <th>Empanadas de Pollo (Unidades)</th>
+    <th>Total de Empanadas (Pesos Colombianos)</th>
+  </tr>
+
+  <% @empanadas.each do |empa| %>
+    <tr>
+      <td><%= empa.carne %></td>
+      <td><%= empa.pollo %></td>
+      <td><b>$ <%= empa.total %></b></td>
+    </tr>
+  <% end %>
+      
+</table>
+
+<p><%= link_to 'Nuevo Registro', new_empanada_path %></p>
+<p><%= link_to 'Inicio', root_path %></p>

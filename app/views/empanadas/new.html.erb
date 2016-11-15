@@ -1,0 +1,19 @@
+<h1>Registro de la cantidad de empanadas vendidas</h1>
+
+<%= form_for :empanadakey, url: empanadas_path do |f| %>
+  <p>
+    <%= f.label :carne %><br>
+    <%= f.number_field :carne %>
+  </p>
+ 
+  <p>
+    <%= f.label :pollo %><br>
+    <%= f.number_field :pollo %>
+  </p>
+ 
+  <p>
+    <%= f.submit 'Registrar Venta' %>
+  </p>
+<% end %>
+
+<%= link_to 'Historial', historial_path %>
